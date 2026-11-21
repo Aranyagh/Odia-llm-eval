@@ -66,10 +66,10 @@ Open `odia_eval.ipynb` in Google Colab with a T4 GPU, install `transformers`, `a
 
 | Path | What it is |
 |---|---|
-| `outputs/gemma_*_outputs.jsonl` | Model generations for each task (ids, outputs, token counts) |
-| `results/summary_gemma.csv` | chrF++ and limit-hit counts per task |
-| `results/fertility.json` | Tokenizer fertility numbers |
-| `results/prompt_dev_results.json` | Prompt comparison on the dev set |
+| `Outputs/gemma_*_outputs.jsonl` | Model generations for each task (ids, outputs, token counts) |
+| `Results/summary_gemma.csv` | chrF++ and limit-hit counts per task |
+| `Results/fertility.json` | Tokenizer fertility numbers |
+| `Results/prompt_dev_results.json` | Prompt comparison on the dev set |
 | `frozen_prompts.json` | The exact prompts used |
 | `odia_eval.ipynb` | All the code |
 
