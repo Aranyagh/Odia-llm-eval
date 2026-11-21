@@ -1,0 +1,14 @@
+{
+  "gemma-4-E4B-it": {
+    "tokens_per_word": {
+      "odia": 4.88,
+      "hindi": 1.39,
+      "english": 1.24
+    },
+    "tokens_per_char": {
+      "odia": 0.708,
+      "hindi": 0.273,
+      "english": 0.205
+    }
+  }
+}

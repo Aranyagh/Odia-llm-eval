@@ -1,0 +1,14 @@
+{
+  "A_plain": {
+    "chrf": 21.1,
+    "wrong_script": 5,
+    "pure": 9,
+    "hit_limit": 1
+  },
+  "B_script": {
+    "chrf": 20.7,
+    "wrong_script": 1,
+    "pure": 13,
+    "hit_limit": 4
+  }
+}
