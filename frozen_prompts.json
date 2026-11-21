@@ -1,0 +1,6 @@
+{
+  "en2or": "Translate the following English sentence into Odia. Use the Odia script (ଓଡ଼ିଆ) only. Output only the translation.\n\n{s}",
+  "en2hi": "Translate the following English sentence into Hindi. Use the Devanagari script (हिन्दी) only. Output only the translation.\n\n{s}",
+  "or2en": "Translate the following Odia sentence into English. Output only the translation.\n\n{s}",
+  "hi2en": "Translate the following Hindi sentence into English. Output only the translation.\n\n{s}"
+}
