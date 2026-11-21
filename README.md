@@ -15,6 +15,7 @@ An evaluation of **Gemma 4 E4B** (`google/gemma-4-E4B-it`, 4-bit) on Odia, Hindi
 
 - Odia→English and Hindi→English use the same English references, so they are directly comparable: Hindi→English is higher by **10.3 chrF++** (95% paired bootstrap range 6.9 to 13.5).
 - Scores into different target languages (English→Odia vs English→Hindi) are not directly comparable, because chrF++ depends on the language and script.
+- FLORES is public, so Hindi→English in particular may be inflated by training-data overlap.
 
 ## Tokenizer fertility (Gemma tokenizer, 200 aligned sentences)
 
