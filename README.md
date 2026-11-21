@@ -2,16 +2,16 @@
 
 An evaluation of **Gemma 4 E4B** (`google/gemma-4-E4B-it`, 4-bit) on Odia, Hindi and English translation, using 100 sentences from Flores-IN (IndicGenBench).
 
-**Short answer:** Gemma reads Odia much better than it writes it. English→Odia scores chrF++ 23.8 against 52.1 for Odia→English, and 15% of its Odia outputs degenerate into repetition loops. Its tokenizer needs 4.88 tokens per Odia word, against 1.39 for Hindi.
+**Short answer:** Gemma 4 E4B writes Odia poorly. English→Odia is its weakest task (chrF++ 23.8, against 52.8 for English→Hindi, though scores into different languages are only roughly comparable), and 15% of its Odia outputs degenerate into repetition loops. On the fair comparison, reading, Hindi→English beats Odia→English by 10.3 chrF++ (95% paired bootstrap range 6.9 to 13.5). Its tokenizer needs 4.88 tokens per Odia word, against 1.39 for Hindi.
 
 ## Results (100 test sentences, greedy decoding, max 512 new tokens)
 
 | Task | chrF++ | 95% bootstrap range | Outputs hitting the 512-token limit |
 |---|---|---|---|
-| English → Odia | 23.8 | [X.X, X.X] | 15 / 100 |
-| English → Hindi | 52.8 | [X.X, X.X] | 0 / 100 |
-| Odia → English | 52.1 | [X.X, X.X] | 0 / 100 |
-| Hindi → English | 62.4 | [X.X, X.X] | 0 / 100 |
+| English → Odia | 23.8 | [21.0, 26.6] | 15 / 100 |
+| English → Hindi | 52.8 | [49.6, 55.9] | 0 / 100 |
+| Odia → English | 52.1 | [49.7, 54.7] | 0 / 100 |
+| Hindi → English | 62.4 | [59.3, 65.4] | 0 / 100 |
 
 - Odia→English and Hindi→English use the same English references, so they are directly comparable: Hindi→English is higher by **10.3 chrF++** (95% paired bootstrap range 6.9 to 13.5).
 - Scores into different target languages (English→Odia vs English→Hindi) are not directly comparable, because chrF++ depends on the language and script.
